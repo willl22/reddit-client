@@ -8,7 +8,6 @@ function Main() {
             <Post />
             <Post />
             <Post />
-            <Post />
         </div>
     );
 };
