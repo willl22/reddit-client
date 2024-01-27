@@ -1,6 +1,6 @@
 import React from "react";
-import SortBy from "./SortBy";
-import SearchBar from "./SearchBar";
+import SortBy from "../../features/SortBy/SortBy";
+import SearchBar from "../../features/SearchBar/SearchBar";
 import "./Header.css";
 
 function Header() {

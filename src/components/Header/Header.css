@@ -4,6 +4,7 @@
     justify-content: space-around;
     width: 100%;
     align-items: center;
+    background-color: rgb(188, 187, 199);
 }
 
 .headerContainer h1 {
