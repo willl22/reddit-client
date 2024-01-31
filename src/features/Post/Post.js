@@ -2,7 +2,7 @@ import React from "react";
 import Comments from "../Comments/Comments";
 import './Post.css';
 
-function Post() {
+function Post(props) {
     return (
         <div className="postContainer">
             <h2 className="postTitle">Post Title</h2>
