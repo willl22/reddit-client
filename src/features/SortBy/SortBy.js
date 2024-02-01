@@ -1,9 +1,9 @@
 import React from "react";
 import "./SortBy.css";
 
-function SortBy() {
+export const categories = ["Best", "Hot", "New", "Top", "Rising"];
 
-    const categories = ["Best", "Hot", "New", "Top", "Rising"];
+function SortBy() {
 
     return (
         <select className="sortDropdown">

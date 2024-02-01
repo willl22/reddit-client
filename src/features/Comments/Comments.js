@@ -1,9 +1,14 @@
 import React from "react";
 import './Comments.css';
 
-function Comments() {
+function Comments(props) {
+    const { comment } = props;
+
     return (
-        <p>comments</p>
+        <div className="comment">
+            <p className="commentAuthor">{comment.author}</p>
+            <p className="commentBody">{comment.body}</p>
+        </div>
     );
 };
 

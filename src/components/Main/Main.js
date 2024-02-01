@@ -40,7 +40,12 @@ function Main() {
 
     if (posts.length === 0) {
         return (
-            <h3>No Posts</h3>
+            <div>
+                <h3>No posts matching "{searchTerm}"</h3>
+                <button type="button" onClick={() => dispatch(setSearchTerm())}>
+                    Go home
+                </button>
+            </div>
         );
     }
 
