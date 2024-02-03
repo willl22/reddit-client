@@ -5,19 +5,73 @@
     margin: 0.5rem;
 }
 
+/*Title styling*/
+
 .postTitle {
     text-align: center;
+    width: 100%;
+    background-color: rgb(179, 136, 176);
+    margin-top: 0;
+    padding: 1rem 0;
+    border-radius: 10px 10px 0 0;
 }
 
+/*Body styling*/
+
 .postBody {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .postImage {
     max-height: 20rem;
+    max-width: fit-content;
+    margin-bottom: 1rem;
 }
+
+/*Footer styling*/
 
 .postFooter {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
+    background-color: rgb(213, 232, 240);
+    border-radius: 0 0 10px 10px;
+    margin-top: 1rem;
+}
+
+.author {
+    display: flex;
+}
+
+.redditIcon {
+    max-height: 1.5rem;
+}
+
+.subreddit {
+    font-weight: bold;
+}
+
+.subreddit:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.commentsButton {
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    padding: 8px;
+    background-color: rgb(105, 201, 201);
+}
+
+.commentsButton:hover {
+    cursor: pointer;
+    background-color: rgb(231, 155, 231);
+}
+
+.commentIcon {
+    max-height: 1.5rem;
 }

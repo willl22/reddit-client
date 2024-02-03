@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./SearchBar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchTerm } from "../../store/redditSlice";
+import searchIcon from "../../images/icons8-search-50.png";
 
 function SearchBar() {
     const [searchTermLocal, setSearchTermLocal] = useState("");
@@ -37,7 +38,11 @@ function SearchBar() {
                     className="searchButton"
                     aria-label="Search"
                 >
-                    Search
+                    <img 
+                        src={ searchIcon }
+                        alt="search"
+                        className="searchIcon"
+                    />
                 </button>
             </form>
         </div>

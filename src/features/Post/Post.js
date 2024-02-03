@@ -3,6 +3,8 @@ import Comments from "../Comments/Comments";
 import './Post.css';
 import { setSelectedSubreddit } from "../../store/redditSlice";
 import { useDispatch } from "react-redux";
+import redditIcon from "../../images/icons8-reddit-64.png";
+import commentIcon from "../../images/icons8-comment-50.png";
 
 function Post(props) {
 
@@ -46,6 +48,7 @@ function Post(props) {
                 <a
                     href={post.url}
                     target="_blank"
+                    rel="noreferrer"
                     className="linkToPost"
                 >
                     See full post
@@ -53,12 +56,19 @@ function Post(props) {
             </div>
 
             <div className="postFooter">
-                <p className="author">{post.author}</p>
+                <p className="author">
+                    <img
+                        src={ redditIcon }
+                        className="redditIcon"
+                        alt="userIcon"
+                    />
+                    {post.author}
+                </p>
                 <p 
                     className="subreddit"
                     onClick={() => dispatch(setSelectedSubreddit(`/r/${subreddit}`))}
                 >
-                    {subreddit}
+                    /r/{subreddit}
                 </p>
                 <button
                     type="button"
@@ -66,7 +76,11 @@ function Post(props) {
                     onClick={() => onToggleComments(post.permalink)}
                     aria-label="Show comments"
                 >
-                    Comments
+                    <img
+                        src={commentIcon}
+                        alt="comments"
+                        className="commentIcon"
+                    />
                 </button>
             </div>
             {renderComments()}

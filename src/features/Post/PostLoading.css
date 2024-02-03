@@ -1,0 +1,14 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(179, 136, 176, 0.363);
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.loadingContainer img {
+    max-height: 10rem;
+    max-width: 10rem;
+    align-self: center;
+}

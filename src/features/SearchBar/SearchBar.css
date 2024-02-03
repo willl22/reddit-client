@@ -1,0 +1,12 @@
+.searchForm {
+    display: flex;
+}
+
+.searchButton {
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    max-height: 1rem;
+}

@@ -18,6 +18,7 @@ function Main() {
 
     useEffect(() => {
         dispatch(fetchPosts(selectedSubreddit));
+        // eslint-disable-next-line
     }, [selectedSubreddit]);
 
     function onToggleComments(index) {
@@ -54,14 +55,14 @@ function Main() {
     return (
         <div>
             <div className="postFeed">
-            {posts.map((post, index) => (
-                <Post
-                    key={post.id}
-                    post={post}
-                    onToggleComments={onToggleComments(index)}
-                    subreddit={post.subreddit}
-                />
-            ))}  
+                {posts.map((post, index) => (
+                    <Post
+                        key={post.id}
+                        post={post}
+                        onToggleComments={onToggleComments(index)}
+                        subreddit={post.subreddit}
+                    />
+                ))} 
             </div>
         </div>
     );

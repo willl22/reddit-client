@@ -14,7 +14,7 @@ function Header() {
                 className="logo"
                 onClick={() => dispatch(setSelectedSubreddit(`/r/popular`))}
             >
-                Reddit
+                <span className="emphasis">Not</span>Reddit
             </h1>
         </div>
         
