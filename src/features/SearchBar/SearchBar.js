@@ -26,7 +26,7 @@ function SearchBar() {
             <form className="searchForm" onSubmit={onSearchTermSubmit}>
                 <input 
                     type="text"
-                    placeholder="Search Reddit" 
+                    placeholder="Search Posts" 
                     value={searchTermLocal}
                     onChange={onSearchTermChange}
                     aria-label="search posts"

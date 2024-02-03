@@ -1,10 +1,13 @@
 import React from "react";
 import Comments from "../Comments/Comments";
 import './Post.css';
+import { setSelectedSubreddit } from "../../store/redditSlice";
+import { useDispatch } from "react-redux";
 
 function Post(props) {
 
-    const { post, onToggleComments } = props;
+    const { post, onToggleComments, subreddit } = props;
+    const dispatch = useDispatch();
 
     const renderComments = () => {
         if (post.errorComments) {
@@ -37,10 +40,26 @@ function Post(props) {
     return (
         <div className="postContainer">
             <h2 className="postTitle">{post.title}</h2>
-            <img src={post.url} alt="" className="postImage" />
+            
+            <div className="postBody">
+                <img src={post.url} alt="" className="postImage" />
+                <a
+                    href={post.url}
+                    target="_blank"
+                    className="linkToPost"
+                >
+                    See full post
+                </a>
+            </div>
 
             <div className="postFooter">
-                <p>{post.author}</p>
+                <p className="author">{post.author}</p>
+                <p 
+                    className="subreddit"
+                    onClick={() => dispatch(setSelectedSubreddit(`/r/${subreddit}`))}
+                >
+                    {subreddit}
+                </p>
                 <button
                     type="button"
                     className="commentsButton"

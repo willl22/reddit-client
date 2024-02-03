@@ -5,8 +5,15 @@
     margin: 0.5rem;
 }
 
-.postTitle, .postImage {
+.postTitle {
     text-align: center;
+}
+
+.postBody {
+    text-align: center;
+}
+.postImage {
+    max-height: 20rem;
 }
 
 .postFooter {

@@ -5,3 +5,7 @@
     width: 100%;
     align-items: center;
 }
+
+.loadingContainer, .errorContainer, .noMatchContainer {
+    padding-top: 3rem;
+}

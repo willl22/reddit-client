@@ -1,14 +1,21 @@
 import React from "react";
-import SortBy from "../../features/SortBy/SortBy";
 import SearchBar from "../../features/SearchBar/SearchBar";
 import "./Header.css";
+import { useDispatch } from "react-redux";
+import { setSelectedSubreddit } from "../../store/redditSlice";
 
 function Header() {
+    const dispatch = useDispatch();
+
     return (
         <div className="headerContainer">
-            <SortBy />
             <SearchBar />
-            <h1 className="logo">Reddit</h1>
+            <h1 
+                className="logo"
+                onClick={() => dispatch(setSelectedSubreddit(`/r/popular`))}
+            >
+                Reddit
+            </h1>
         </div>
         
     );
