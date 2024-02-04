@@ -1,0 +1,15 @@
+.comment {
+    border-bottom: 1px solid rgba(184, 182, 182, 0.76);
+    border-radius: 10px;
+    background-color: rgb(105, 201, 201);
+    margin: 0;
+}
+
+.commentAuthor {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.commentBody {
+    padding: 0 1rem;
+}

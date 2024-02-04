@@ -1,8 +1,10 @@
 .postContainer {
     width: 70%;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
     margin: 0.5rem;
+    
+    background-color: white;
 }
 
 /*Title styling*/
@@ -74,4 +76,8 @@
 
 .commentIcon {
     max-height: 1.5rem;
+}
+
+.commentsLoadingContainer {
+    text-align: center;
 }

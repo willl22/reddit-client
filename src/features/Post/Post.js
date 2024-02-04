@@ -5,6 +5,7 @@ import { setSelectedSubreddit } from "../../store/redditSlice";
 import { useDispatch } from "react-redux";
 import redditIcon from "../../images/icons8-reddit-64.png";
 import commentIcon from "../../images/icons8-comment-50.png";
+import loader from "../../images/loading.gif";
 
 function Post(props) {
 
@@ -20,7 +21,10 @@ function Post(props) {
 
         if (post.loadingComments) {
             return (
-                <h3>loading</h3>
+                <div className="commentsLoadingContainer">
+                    <h3 className="commentsLoadingText">loading...</h3>
+                    <img src={ loader } alt="loading" className="commentsLoadingGif"/>
+                </div>
             );
         }
 

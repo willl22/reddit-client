@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background-color: rgba(131, 182, 178, 0.555);
 }
 
 .loadingContainer, .errorContainer, .noMatchContainer {
