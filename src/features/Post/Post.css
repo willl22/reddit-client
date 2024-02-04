@@ -36,6 +36,7 @@
 
 .postFooter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -80,4 +81,28 @@
 
 .commentsLoadingContainer {
     text-align: center;
+}
+
+/*Mobile styles*/
+
+@media only screen and (max-width: 480px) {
+    .postContainer {
+        width: 95%;
+    }
+
+    .postImage {
+        max-height: 13rem;
+    }
+}
+
+/*Tablet styles*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .postContainer {
+        width: 85%;
+    }
+    
+    .postImage {
+        max-height: 13rem;
+    }
 }

@@ -31,6 +31,7 @@ function SearchBar() {
                     value={searchTermLocal}
                     onChange={onSearchTermChange}
                     aria-label="search posts"
+                    className="searchInput"
                 />
                 <button 
                     type="submit"
